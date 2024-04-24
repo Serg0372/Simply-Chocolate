@@ -1,24 +1,67 @@
+/*  ============== basic settings ============== */
+
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 button {
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============== Body ============== */
 
 body {
     font-family: "Montserrat", sans-serif;
     background: #fafafa;
     color: #111111;
+    margin: 0;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 1136px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav-link-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
 }
 
 /* ===============  Header  =============== */
-.header_container {}
+.header_section {}
 
 /* ========== Logo ========== */
 .logo_word_italica,
@@ -68,7 +111,8 @@ body {
 /* ===============  Main contant  =============== */
 /* ===============  Hero  =============== */
 .hero_section {
-    background-color: #1e1823;
+    background-color: rgba(17, 17, 17, 0.6);
+    ;
 }
 
 .hero_title {
@@ -228,9 +272,7 @@ body {
 
 .recipe_list {}
 
-.recipe_cooking_list {
-    list-style: circle;
-}
+.recipe_cooking_list {}
 
 .recipe_cooking_list_text {
     font-size: 14px;
@@ -279,6 +321,7 @@ body {
     font-weight: 600;
     font-size: 18px;
 }
+
 .button_leave_a_review:hover {
     color: #ffffff
 }
@@ -344,10 +387,10 @@ body {
     font-size: 14px;
     color: #ffffff;
 }
+
 .button_subscribe:hover,
 .button_enter_your_email:hover,
 .nav_link_name_footer:hover,
-.contants_list_address:hover
- {
+.contants_list_address:hover {
     color: #FD9222
 }
