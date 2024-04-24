@@ -48,8 +48,8 @@ body {
 }
 
 .container {
-    width: 1136px;
-    padding: 0 15px;
+    width: 1168px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -60,337 +60,89 @@ body {
     letter-spacing: -0.02em;
 }
 
-/* ===============  Header  =============== */
-.header_section {}
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
 
-/* ========== Logo ========== */
-.logo_word_italica,
-.logo_header {
-    font-style: italic;
+.section-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+}
+
+.list-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+/* ===============  Header  =============== */
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-box-header {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.heder-nav-list {
+    display: flex;
+    margin-right: 90px;
+    column-gap: 24px;
+}
+
+.nav-link-name {
+    display: block;
+    padding: 24px 0 36px;
+}
+
+.logo {
+    margin: 24px 0 36px;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.11;
     letter-spacing: -0.03em;
-    color: #111111;
+    color: inherit;
 }
 
-.logo_header {
-    font-style: normal;
+.logo-italica {
+    font-style: italic;
 }
 
-.logo_header:hover,
-.logo_word_italica:hover {
+.logo:hover,
+.logo:focus {
     color: #FD9222;
 }
 
-.logo_img {}
-
-
-
-/* ========== Nav ========== */
-.nav_link {}
-
-.nav_link_name {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-    color: #111111;
+.logo-img {
+    margin: 24px 0 36px 4px;
 }
 
-.nav_link_name:hover {
-    color: #FD9222
+.heder-social-list {
+    display: flex;
+    column-gap: 14px;
+    margin: 24px 0 36px;
 }
 
-/* ====== Social links ====== */
-.social-links-list {}
-
-.social-links {}
-
-
-/* ===============  Main contant  =============== */
-/* ===============  Hero  =============== */
-.hero_section {
+/* --====================== Main contant ======================= */
+/* =================== HERO ====================== */
+.hero-section {
     background-color: rgba(17, 17, 17, 0.6);
-    ;
-}
-
-.hero_title {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21;
-    letter-spacing: -0.03em;
-    color: #ffffff;
-    width: 484px;
-}
-
-.button_buy_now {
-    font-weight: 600;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #fd9222;
-}
-
-.button_buy_now:hover,
-.link_how_its_made:hover,
-.link_scroll_down:hover {
-    color: #FD9222
-}
-
-.link_how_its_made {
-    font-weight: 600;
-    font-size: 14px;
-    color: #ffffff;
-}
-
-.link_scroll_down {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.03em;
-    color: #ffffff;
-}
-
-.scroll_down_img {}
-
-/* ===============  Our Benefits  =============== */
-.our_benefits_section {
-    background: #1e1823;
-}
-
-.our_benefits_title {
-    display: none;
-}
-
-.our_benefits_list {}
-
-.our_benefits_list_column {}
-
-.our_benefits_list_title {
-    font-weight: 600;
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.our_benefits_list_text {
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: -0.02em;
-    color: rgba(255, 255, 255, 0.7)
-}
-
-/* ===============  Ingredients  =============== */
-
-.ingridients_section {}
-
-.ingredients_title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.orange_word {
-    color: #fd9222;
-}
-
-.ingredients_description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-align: center;
-}
-
-.ingredients_list {}
-
-.ingredients_name_milk_chocolate,
-.ingredients_name_milk,
-.ingredients_name_nuts,
-.ingredients_name_chokolate {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
-
-.ingredients_list_milk_chocolate {
-    background: #fd9222;
-}
-
-.ingredients_name_milk_chocolate {
-
-    color: #ffffff;
-}
-
-
-.ingredients_list_milk {
-    background-color: #ffffff;
-}
-
-.ingredients_name_milk {}
-
-
-.ingredients_list_nute {
-    background: #1e1823;
-}
-
-.ingredients_name_nuts {
-    color: #ffffff;
-}
-
-.ingredients_list_chokolate {
-    background-color: #ffffff;
-}
-
-.ingredients_name_chokolate {}
-
-/* =============== hOW IT’S made? =============== */
-
-.how_its_made_section {}
-
-.how_its_made_title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.recipу_container {}
-
-.recipe_title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    text-align: center;
-}
-
-.recipe_list {}
-
-.recipe_cooking_list {}
-
-.recipe_cooking_list_text {
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em
-}
-
-/* =============== CHOCOLATE IS LOVED =============== */
-
-.review_section {}
-
-.review_title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-
-}
-
-.review_list {}
-
-.review_list_column {
-    background-color: #ffffff;
-}
-
-.review_foto {}
-
-.review_name {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    text-align: center;
-}
-
-.review_text {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: rgba(17, 17, 17, 0.7)
-}
-
-.button_leave_a_review {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.button_leave_a_review:hover {
-    color: #ffffff
-}
-
-/* =============== Footer =============== */
-
-.footer_section {
-    background: #1e1823;
-}
-
-.footer_devis {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-}
-
-.address {}
-
-.Contacts {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    color: #ffffff
-}
-
-.contants_list {}
-
-.contants_list_address {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #ffffff;
-}
-
-.nav_list_footer {}
-
-.nav_link_list_footer {}
-
-.nav_link_name_footer {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-}
-
-.button_enter_your_email {
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: -0.02em;
-    color: rgba(255, 255, 255, 0.3);
-
-}
-
-.button_subscribe {
-    background-color: #fd9222;
-    font-weight: 600;
-    font-size: 14px;
-    color: #ffffff;
-}
-
-.button_subscribe:hover,
-.button_enter_your_email:hover,
-.nav_link_name_footer:hover,
-.contants_list_address:hover {
-    color: #FD9222
+    border-radius: 30px;
+    max-width: 1136px;
+    margin: 0 auto;
+    height: 600px;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), 
+    url("/img/hero/chocolate_main.jpg");
+    background-size: cover;
 }
