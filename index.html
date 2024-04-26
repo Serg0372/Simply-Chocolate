@@ -24,24 +24,30 @@
       <div class="container">
         <nav class="header-nav">
           <a class="logo" href="./index.html">
-            <span class="logo-italica">SIMPLY</span> CHOCOLATE </a
-          ><img
-            class="logo-img"
-            src="/img/icon/chocolate.svg"
-            alt="logo-img"
-            width="24"
-            height="24"
-          />
+            <span class="logo-italica">SIMPLY</span> CHOCOLATE
+            <svg class="logo-svg">
+              <use
+                href="/img/icon/symbol-defs.svg#icon-chocolate"
+                widht="24"
+                height="24"
+              ></use>
+            </svg>
+          </a>
+
           <div class="nav-box-header">
             <ul class="heder-nav-list">
               <li class="nav-list">
-                <a class="nav-link-name" href="./index.html">Home</a>
+                <a class="nav-link-name current" href="./index.html">Home</a>
               </li>
               <li class="nav-list">
-                <a class="nav-link-name" href="#chocolate">How it’s made?</a>
+                <a class="nav-link-name current" href="#chocolate"
+                  >How it’s made?</a
+                >
               </li>
               <li class="nav-list">
-                <a class="nav-link-name" href="#review">Chocolate is loved</a>
+                <a class="nav-link-name current" href="#review"
+                  >Chocolate is loved</a
+                >
               </li>
             </ul>
             <ul class="heder-social-list">
@@ -51,12 +57,13 @@
                   href="https://www.instagram.com"
                   target="_blank"
                 >
-                  <img
-                    src="/img/icon/instagram.svg"
-                    alt="instagram"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="social-icon">
+                    <use
+                      href="/img/icon/sprite.svg#icon-instagram"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
                 </a>
               </li>
               <li class="social-item">
@@ -65,12 +72,13 @@
                   href="https://facebook.com"
                   target="_blank"
                 >
-                  <img
-                    src="/img/icon/facebook.svg"
-                    alt="facebook"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="social-icon">
+                    <use
+                      href="/img/icon/sprite.svg#icon-facebook"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
                 </a>
               </li>
               <li class="social-item">
@@ -79,12 +87,13 @@
                   href="https://twitter.com"
                   target="_blank"
                 >
-                  <img
-                    src="/img/icon/twitter.svg"
-                    alt="twitter"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="social-icon">
+                    <use
+                      href="/img/icon/sprite.svg#icon-twitter"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -97,40 +106,49 @@
     <main>
       <!-- ====== Hero ====== -->
       <section class="hero-section">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button class="button-buy-now" type="button">Buy now</button>
-          <a class="link-how-its-made" href="#chocolate">How it's made</a>
-          <a class="link-scroll-down" href=""
-            >Scroll down
-            <!-- <img
-              class="scroll-down-img"
-              src="./img/scroll_down.png"
-              alt="Scroll down"
-              width="38"
-              height="38"
-          /> -->
-          </a>
+          <div class="buttons-hero">
+            <button class="button-buy-now" type="button">Buy now</button>
+            <a class="link-how-its-made" href="#chocolate">How it's made</a>
+            <a class="link-scroll-down" href="#benefits"
+              >Scroll down
+              <span class="scroll-button">
+                <svg class="icon-scroll">
+                  <use
+                    href="/img/icon/scroll_new.svg#icon-arrow-down"
+                    width="22"
+                    height="22"
+                  ></use>
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- ==== Our Benefits ===== -->
-      <section class="benefits-section section">
+      <section class="benefits-section" id="benefits">
         <div class="container">
           <h2 class="benefits-section-title">Our Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-column">
-              <!-- <img
-                src="./img/icons.png"
-                alt="Logo Unsurpassed taste"
-                width="62"
-                height="62"
-              /> -->
-              <h3 class="section-subtitle">Unsurpassed taste</h3>
-              <p class="list-text">
+              <a href="#ingredients" class="benefits-list-icon">
+                <svg class="benefits-icon">
+                  <use
+                    href="/img/icon/sprite.svg#icon-unsurpassed"
+                    width="32"
+                    height="32"
+                  ></use>
+                </svg>
+              </a>
+              <h3 class="section-subtitle subtitle-benefits">
+                Unsurpassed taste
+              </h3>
+              <p class="list-text text-benefits">
                 Crafted with the finest quality cocoa beans and a dedication to
                 perfection, each bite is a decadent experience that simply
                 cannot be matched. Savor the richness and complexity of our
@@ -138,14 +156,20 @@
               </p>
             </li>
             <li class="benefits-list-column">
-              <!-- <img
-                src="img/icons-1.png"
-                alt="Logo Affordable price"
-                width="62"
-                height="62"
-              /> -->
-              <h3 class="section-subtitle">Affordable price</h3>
-              <p class="list-text">
+              <a class="benefits-list-icon" href="#price">
+                <svg class="benefits-icon">
+                  <use
+                    href="/img/icon/sprite.svg#icon-affordable"
+                    width="32"
+                    height="32"
+                  ></use>
+                </svg>
+              </a>
+
+              <h3 class="section-subtitle subtitle-benefits">
+                Affordable price
+              </h3>
+              <p class="list-text text-benefits">
                 Indulge in high-quality chocolate without breaking the bank with
                 Simply Chocolate's selection of affordable treats. Enjoy
                 mouth-watering truffles and velvety chocolate bars without
@@ -154,14 +178,16 @@
               </p>
             </li>
             <li class="benefits-list-column">
-              <!-- <img
-                src="./img/icons-2.png"
-                alt="Logo Own production"
-                width="62"
-                height="62"
-              /> -->
-              <h3 class="section-subtitle">Own production</h3>
-              <p class="list-text">
+              <a class="benefits-list-icon" href="#chocolate"
+                ><svg class="benefits-icon">
+                  <use
+                    href="/img/icon/sprite.svg#icon-own-production"
+                    width="32"
+                    height="32"
+                  ></use></svg
+              ></a>
+              <h3 class="section-subtitle subtitle-benefits">Own production</h3>
+              <p class="list-text text-benefits">
                 We take pride in our own production process, ensuring that every
                 step is carefully crafted to perfection. From selecting the
                 finest ingredients to handcrafting each piece, our attention to
@@ -173,13 +199,13 @@
       </section>
 
       <!-- ==== Ingredients ===== -->
-      <section class="ingridients-section section">
+      <section class="ingridients-section section" id="ingredients">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title title-ingridients">
             IT ALL ADDS UP TO ONE EXCEPTIONAL
             <span class="orange-word">TASTE</span> SENSATION
           </h2>
-          <p class="list-text">
+          <p class="list-text text-ingridients">
             At Simply Chocolate, we believe that the secret to exceptional
             chocolate is in the details. From the sourcing of the finest
             ingredients to the careful crafting of each individual piece, every
@@ -187,67 +213,211 @@
           </p>
           <ul class="ingredients-list">
             <li class="ingredients-title">
-              <img
-                src="/img/Ingredients/milk_chocolate.png"
-                alt="MILK CHOCOLATE"
-                width="206"
-                height="160"
-              />
-              <h3 class="section-subtitle">MILK CHOCOLATE</h3>
+              <div class="chocolate-card">
+                <a href="#">
+                  <svg class="arrow">
+                    <use
+                      href="/img/icon/arrow_new.svg#icon-circle-right"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
+                </a>
+                <img
+                  class="ingredient-foto"
+                  src="/img/Ingredients/milk_chocolate.png"
+                  alt="MILK CHOCOLATE"
+                  width="214"
+                  height="160"
+                />
+                <h3 class="section-subtitle">MILK CHOCOLATE</h3>
+              </div>
+              <div class="chocolate-text">
+                <h3 class="card-title">Milk chocolate</h3>
+                <a href="#price" class="button-card-orange">chocolate</a>
+                <a href="#benefits" class="button-card-white">the benefits</a>
+                <p class="card-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="ingredients-title">
-              <img
-                src="/img/Ingredients/milk.png"
-                alt="Milk"
-                width="206"
-                height="160"
-              />
-              <h3 class="section-subtitle">MILK</h3>
+              <div class="chocolate-card">
+                <a href="#">
+                  <svg class="arrow">
+                    <use
+                      href="/img/icon/arrow_new.svg#icon-circle-right"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
+                </a>
+                <img
+                  class="ingredient-foto"
+                  src="/img/Ingredients/milk.png"
+                  alt="Milk"
+                  width="214"
+                  height="160"
+                />
+                <h3 class="section-subtitle">MILK</h3>
+              </div>
+              <div class="chocolate-text">
+                <h3 class="card-title">Milk</h3>
+                <a href="#price" class="button-card-orange">chocolate</a>
+                <a href="#benefits" class="button-card-white">the benefits</a>
+                <p class="card-text">
+                  Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.
+                </p>
+              </div>
             </li>
             <li class="ingredients-title">
-              <img
-                src="/img/Ingredients/nute.png"
-                alt="nuts"
-                width="206"
-                height="160"
-              />
-              <h3 class="section-subtitle">NUTS</h3>
+              <div class="chocolate-card">
+                <a href="#">
+                  <svg class="arrow">
+                    <use
+                      href="/img/icon/arrow_new.svg#icon-circle-right"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
+                </a>
+                <img
+                  class="ingredient-foto"
+                  src="/img/Ingredients/nute.png"
+                  alt="nuts"
+                  width="214"
+                  height="160"
+                />
+                <h3 class="section-subtitle">NUTS</h3>
+              </div>
+              <div class="chocolate-text">
+                <h3 class="card-title">NUTS</h3>
+                <a href="#price" class="button-card-orange">chocolate</a>
+                <a href="#benefits" class="button-card-white">the benefits</a>
+                <p class="card-text">
+                  Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.
+                </p>
+              </div>
             </li>
             <li class="ingredients-title">
-              <img
-                src="/img/Ingredients/semi_sweet_chokolate.png"
-                alt="SEMI - SWEET CHOCOLATE"
-                width="206"
-                height="160"
-              />
-              <h3 class="section-subtitle">SEMI - SWEET CHOCOLATE</h3>
+              <div class="chocolate-card">
+                <a href="#">
+                  <svg class="arrow">
+                    <use
+                      href="/img/icon/arrow_new.svg#icon-circle-right"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
+                </a>
+                <img
+                  class="ingredient-foto"
+                  src="/img/Ingredients/semi_sweet_chokolate.png"
+                  alt="SEMI - SWEET CHOCOLATE"
+                  width="214"
+                  height="160"
+                />
+                <h3 class="section-subtitle">SEMI - SWEET CHOCOLATE</h3>
+              </div>
+              <div class="chocolate-text">
+                <h3 class="card-title">SEMI - SWEET CHOCOLATE</h3>
+                <a href="#price" class="button-card-orange">chocolate</a>
+                <a href="#benefits" class="button-card-white">the benefits</a>
+                <p class="card-text">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. 
+                </p>
+              </div>
             </li>
             <li class="ingredients-title">
-              <img
-                src="/img/Ingredients/cacao.png"
-                alt="CACAO"
-                width="206"
-                height="160"
-              />
-              <h3 class="section-subtitle">CACAO</h3>
+              <div class="chocolate-card">
+                <a href="#">
+                  <svg class="arrow">
+                    <use
+                      href="/img/icon/arrow_new.svg#icon-circle-right"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
+                </a>
+                <img
+                  class="ingredient-foto"
+                  src="/img/Ingredients/cacao.png"
+                  alt="CACAO"
+                  width="214"
+                  height="160"
+                />
+                <h3 class="section-subtitle">CACAO</h3>
+              </div>
+              <div class="chocolate-text">
+                <h3 class="card-title">CACAO</h3>
+                <a href="#price" class="button-card-orange">chocolate</a>
+                <a href="#benefits" class="button-card-white">the benefits</a>
+                <p class="card-text">
+                  Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals
+                </p>
+              </div>
             </li>
             <li class="ingredients-title">
-              <img
-                src="/img/Ingredients/raspberry.png"
-                alt="RASPBERRY"
-                width="206"
-                height="160"
-              />
-              <h3 class="section-subtitle">RASPBERRY</h3>
+              <div class="chocolate-card">
+                <a href="#">
+                  <svg class="arrow">
+                    <use
+                      href="/img/icon/arrow_new.svg#icon-circle-right"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
+                </a>
+                <img
+                  class="ingredient-foto"
+                  src="/img/Ingredients/raspberry.png"
+                  alt="RASPBERRY"
+                  width="214"
+                  height="160"
+                />
+                <h3 class="section-subtitle">RASPBERRY</h3>
+              </div>
+              <div class="chocolate-text">
+                <h3 class="card-title">RASPBERRY</h3>
+                <a href="#price" class="button-card-orange">chocolate</a>
+                <a href="#benefits" class="button-card-white">the benefits</a>
+                <p class="card-text">
+                  Raspberry is a tasty and aromatic berry plant that is popular all over the world. It belongs to the pink family and grows in many regions, including North America, Europe and Asia. Raspberries have many varieties and color variations, from red to yellow and black.
+                </p>
+              </div>
             </li>
             <li class="ingredients-title">
-              <img
-                src="/img/Ingredients/coconut.png"
-                alt="COCONUT OIL"
-                width="206"
-                height="160"
-              />
-              <h3 class="section-subtitle">COCONUT OIL</h3>
+              <div class="chocolate-card">
+                <a href="#">
+                  <svg class="arrow">
+                    <use
+                      href="/img/icon/arrow_new.svg#icon-circle-right"
+                      width="24"
+                      height="24"
+                    ></use>
+                  </svg>
+                </a>
+                <img
+                  class="ingredient-foto"
+                  src="/img/Ingredients/coconut.png"
+                  alt="COCONUT OIL"
+                  width="214"
+                  height="160"
+                />
+                <h3 class="section-subtitle">COCONUT OIL</h3>
+              </div>
+              <div class="chocolate-text">
+                <h3 class="card-title">COCONUT OIL</h3>
+                <a href="#price" class="button-card-orange">chocolate</a>
+                <a href="#benefits" class="button-card-white">the benefits</a>
+                <p class="card-text">
+                  Coconut oil is a vegetable oil obtained from the pulp of the fruit of the coconut palm (Cocos nucifera). It is widely used in cooking, cosmetics and medicine, thanks to its numerous useful properties. Coconut oil is a source of saturated fats, especially medium-chain fatty acids, such as lauric acid.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -259,54 +429,57 @@
           <h2 class="section-title">
             HOW IT’S<span class="orange-word"> MADE?</span>
           </h2>
-          <img
-            src="/img/hOW IT’S made/how_its_made.png"
-            alt=""
-            width="600"
-            height="400"
-          />
-          <div class="recipу-container">
-            <h3 class="section-subtitle">
-              Try our chocolates today and discover the perfect balance of
-              flavor
-            </h3>
-            <ul class="recipe-list">
-              <li class="recipe-title">
-                <p class="list-text">
-                  Heat the milk in a saucepan without bringing it to a boil. Add
-                  sugar and cocoa powder.
-                </p>
-              </li>
-              <li class="recipe-title">
-                <p class="list-text">
-                  At the same time, prepare a water bath. Melt the butter on it.
-                </p>
-              </li>
-              <li class="recipe-title">
-                <p class="list-text">
-                  "Mix" the milk mixture and already liquid butter. Mix
-                  thoroughly with a silicone spatula so that the mass becomes
-                  uniform and silky.
-                </p>
-              </li>
-              <li class="recipe-title">
-                <p class="list-text">
-                  Heat the mixture over low heat, letting it barely boil.
-                </p>
-              </li>
-              <li class="recipe-title">
-                <p class="list-text">
-                  Pour the chocolate into special containers (can be replaced
-                  with ice molds). Allow to cool and harden.
-                </p>
-              </li>
-            </ul>
+          <div class="made-box">
+            <img
+              src="/img/hOW-ITS-made/how_its_made.png"
+              alt="how_its_made_img"
+              width="600"
+              height="400"
+            />
+            <div class="recipу-container">
+              <h3 class="section-subtitle subtitle-made">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="recipe-list">
+                <li class="recipe-title">
+                  <p class="list-text text-made">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="recipe-title">
+                  <p class="list-text text-made">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="recipe-title">
+                  <p class="list-text text-made">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="recipe-title">
+                  <p class="list-text text-made">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="recipe-title">
+                  <p class="list-text text-made">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- ===== OUR PRODUCTS ===== -->
-      <section class="products-section section">
+      <section class="products-section section" id="price">
         <div class="container">
           <h2 class="section-title">
             OUR <span class="orange-word">PRODUCTS</span>

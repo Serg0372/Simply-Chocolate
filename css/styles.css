@@ -67,12 +67,15 @@ body {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .section-subtitle {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -81,6 +84,10 @@ body {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+}
+
+.orange-word {
+    color: #FD9222;
 }
 
 /* ===============  Header  =============== */
@@ -95,6 +102,34 @@ body {
     align-items: center;
 }
 
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.current {
+    position: relative;
+}
+
+.nav-list:hover .current::after,
+.nav-list:focus .current::after {
+    content: '';
+    background-color: #FD9222;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list:hover .current,
+.nav-list:focus .current {
+    color: #FD9222;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .heder-nav-list {
     display: flex;
     margin-right: 90px;
@@ -107,6 +142,9 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     margin: 24px 0 36px;
     font-weight: 700;
     font-size: 18px;
@@ -116,33 +154,478 @@ body {
 }
 
 .logo-italica {
+
     font-style: italic;
 }
 
 .logo:hover,
 .logo:focus {
     color: #FD9222;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-img {
-    margin: 24px 0 36px 4px;
+.logo-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    stroke-width: 1.50px;
+    stroke: #111111;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    stroke: #FD9222;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heder-social-list {
     display: flex;
-    column-gap: 14px;
+    gap: 24px;
     margin: 24px 0 36px;
 }
 
 /* --====================== Main contant ======================= */
 /* =================== HERO ====================== */
+
 .hero-section {
     background-color: rgba(17, 17, 17, 0.6);
     border-radius: 30px;
-    max-width: 1136px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 600px;
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), 
-    url("/img/hero/chocolate_main.jpg");
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
+        url("/img/hero/chocolate_main.jpg");
     background-size: cover;
+    color: #ffffff;
+
+
+}
+
+.hero-container {
+    padding: 381px 56px 40px;
+}
+
+.hero-title {
+    max-width: 484px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+}
+
+.buttons-hero {
+    display: flex;
+    align-items: center;
+}
+
+.button-buy-now {
+    border-radius: 100px;
+    padding: 14px 40px;
+    min-width: 144px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #FD9222;
+    color: currentColor;
+    margin-right: 14px;
+}
+
+.button-buy-now:hover,
+.button-buy-now:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+.link-how-its-made {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 14px 40px;
+    min-width: 183px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.link-how-its-made:hover,
+.link-how-its-made:focus {
+    border-color: #FD9222;
+    color: #FD9222;
+}
+
+.link-scroll-down {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    gap: 14px;
+}
+
+.scroll-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 38px;
+    height: 38px;
+}
+
+.icon-scroll {
+    width: 22px;
+    height: 22px;
+    fill: #FD9222;
+}
+
+.link-scroll-down:hover,
+.link-scroll-down:focus {
+    color: #FD9222;
+}
+
+.link-scroll-down:hover .scroll-button,
+.link-scroll-down:focus .scroll-button {
+    background-color: #FD9222;
+}
+
+.link-scroll-down:hover .icon-scroll,
+.link-scroll-down:focus .icon-scroll {
+    fill: #ffffff;
+}
+
+/* ===================== Our Benefits ====================== */
+
+.benefits-section {
+    background-color: #1e1823;
+    margin: 80px 0 60px 0;
+}
+
+.benefits-section-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.subtitle-benefits {
+    color: #ffffff;
+    padding-bottom: 18px;
+    text-align: left;
+}
+
+.text-benefits {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: row;
+    gap: 88px;
+}
+
+.benefits-list-column {
+    width: calc((100% - 88px * 2) / 3);
+    padding: 50px 0;
+}
+
+.benefits-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-bottom: 22px;
+
+}
+
+.benefits-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.benefits-list-icon:hover,
+.benefits-list-icon:focus {
+    border-color: #FD9222;
+    background-color: #fff;
+}
+
+/* ===================== Ingredients ====================== */
+
+.chocolate-text {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-color: #ffffff;
+    color: #111111;
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+}
+
+.chocolate-text .card-title {
+    padding: 20px 0 8px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.chocolate-text .button-card-orange {
+    border: 1px solid #e9c095;
+    border-radius: 35px;
+    padding: 6px 16px;
+    width: 81px;
+    height: 24px;
+    background: #fd9222;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0 0 14px 15px;
+}
+
+.chocolate-text .button-card-white {
+    border: 1px solid #fd9222;
+    border-radius: 35px;
+    padding: 6px 16px;
+    width: 93px;
+    height: 24px;
+    background: #fafafa;
+    font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        color: #111111;
+    margin-top: 14px;
+}
+
+.chocolate-text .card-text {
+    /* overflow: auto ;  - НЕ ПРАЦЮЄ    НЕ ПРАЦЮЄ     НЕ ПРАЦЮЄ*/ 
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    padding: 14px 15px 20px;
+    width: 100%;
+}
+
+.ingredients-title:hover .chocolate-text {
+    left: 0;
+}
+
+.title-ingridients {
+    max-width: 440px;
+    margin: 0 auto 30px;
+}
+
+.text-ingridients {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.29;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    row-gap: 24px;
+}
+
+.ingredients-title {
+    border-radius: 15px;
+    width: calc((100% - 32px * 3) / 4);
+    overflow: hidden;
+    position: relative;
+}
+
+.ingredients-title:nth-child(4n+1) {
+    background-color: #FD9222;
+    color: #fff;
+}
+
+.ingredients-title:nth-child(even) {
+    background-color: #ffffff;
+    border: 1px solid #fd9222;
+    color: #111111;
+}
+
+.ingredients-title:nth-child(4n+3) {
+    background-color: #1e1823;
+    color: #ffffff;
+}
+
+.arrow {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 14px;
+    margin-top: 14px;
+}
+
+
+/* НЕ ПРАЦЮЄ        НЕ ПРАЦЮЄ           НЕ  ПРАЦЮЄ         НЕ ПРАЦЮЄ  
+
+ІКОНКІ З МАКЕТА ЗОВСІМ НЕ РЕАГУЮТЬ НА КОЛІР - ЗАМІНЯЮ НА БЕЗКОШТОВНІ ПРОСТІ - ВСЮДУ ПРАЦЮЮТЬ, А ПРИ ЦІЙ ФОРМУЛІ НІ                 */
+.arrow:nth-child(even) {
+    fill: #FD9222;
+}
+
+/* НЕ ПРАЦЮЄ         НЕ ПРАЦЮЄ         НЕ  ПРАЦЮЄ        НЕ ПРАЦЮЄ  */
+.arrow:nth-child(even):hover,
+.arrow:nth-child(even):focus {
+    background-color: #FD9222;
+    fill: #fafafa;
+}
+
+.arrow:nth-child(odd) {
+    fill: #fafafa;
+}
+
+.arrow:nth-child(odd):hover,
+.arrow:nth-child(odd):focus {
+    background-color: #fafafa;
+    fill: #FD9222;
+    stroke: #fafafa;
+    stroke-width: 2px;
+}
+
+.ingredient-foto {
+    margin: 0 23px 26px;
+}
+
+.ingredients-title .section-subtitle {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align-last: left;
+    padding: 0 0 28px 28px;
+}
+
+/* --======           HOW IT’S made?              =======- */
+
+.made-box {
+    display: flex;
+    align-items: center;
+}
+
+.recipу-container {
+    width: 516px;
+    margin: 0 auto;
+    padding: 32px;
+
+}
+
+.subtitle-made {
+    text-align: left;
+    margin-bottom: 28px;
+    width: 350px;
+}
+
+.recipe-title {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.recipe-title:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.recipe-title::before {
+    display: block;
+    text-align: center;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-image: url(/img/hOW-ITS-made/Ellipse.svg);
+}
+
+.text-made {
+    max-width: 410px;
+}
+
+/* ================ OUR PRODUCTS ====================== */
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    row-gap: 24px;
+}
+
+.product-card {
+    width: calc((100% - 18px*3) / 4);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-card .section-subtitle {
+    margin-top: 8px;
+}
+
+.product-card .list-text {
+    margin-bottom: 18px;
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7)
+}
+
+
+.product-card .price {
+    margin-bottom: 18px;
+    margin-left: 88px;
+    margin-right: 88px;
+
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    padding: 8px 18px;
+    min-width: 94px;
+    height: 33px;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: #111;
+}
+
+.product-card img {
+    margin: 32px 20px 0;
+}
+
+.product-card:hover,
+.product-card:focus {
+    background-color: #FCF1E0;
+    border: 1px solid #FD9222;
+}
+
+.product-card:hover .price,
+.product-card:focus .price {
+    border: 1px solid #FD9222;
+    color: #fd9222;
 }
