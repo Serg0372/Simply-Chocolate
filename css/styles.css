@@ -91,6 +91,16 @@ body {
 }
 
 /* ===============  Header  =============== */
+
+.header-section {
+    position: fixed;
+    z-index: 100000;
+    background-color: #fafafa;
+    width: 100%;
+    /* backdrop-filter: blur(15px);
+        background: linear-gradient(161deg, ); */
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -105,10 +115,12 @@ body {
 .nav-list {
     display: flex;
     gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list:hover .current::after,
@@ -121,13 +133,18 @@ body {
     position: absolute;
     left: 0;
     bottom: -1px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.nav-list:hover,
+.nav-list:focus {
+    color: #FD9222;
 }
 
 .nav-list:hover .current,
 .nav-list:focus .current {
     color: #FD9222;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .heder-nav-list {
@@ -151,17 +168,17 @@ body {
     line-height: 1.11;
     letter-spacing: -0.03em;
     color: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-italica {
-
     font-style: italic;
 }
 
 .logo:hover,
 .logo:focus {
     color: #FD9222;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .logo-svg {
@@ -169,19 +186,25 @@ body {
     height: 24px;
 }
 
-.social-icon {
+.social-icon{
+    width: 24px;
+        height: 24px;
+}
+.social-link {
     display: block;
     width: 24px;
     height: 24px;
     fill: #ffffff;
     stroke-width: 1.50px;
     stroke: #111111;
+    transition: stroke 1000ms cubic-bezier(1, 80, 80, 1);
 }
 
-.social-icon:hover,
-.social-icon:focus {
+
+.social-link:hover,
+.social-link:focus {
     stroke: #FD9222;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .heder-social-list {
@@ -194,7 +217,7 @@ body {
 /* =================== HERO ====================== */
 
 .hero-section {
-    background-color: rgba(17, 17, 17, 0.6);
+       background-color: rgba(17, 17, 17, 0.6);
     border-radius: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -203,8 +226,7 @@ body {
         url("/img/hero/chocolate_main.jpg");
     background-size: cover;
     color: #ffffff;
-
-
+    
 }
 
 .hero-container {
@@ -410,14 +432,14 @@ body {
     height: 24px;
     background: #fafafa;
     font-weight: 400;
-        font-size: 10px;
-        line-height: 1.2;
-        color: #111111;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #111111;
     margin-top: 14px;
 }
 
 .chocolate-text .card-text {
-    /* overflow: auto ;  - НЕ ПРАЦЮЄ    НЕ ПРАЦЮЄ     НЕ ПРАЦЮЄ*/ 
+    /* overflow: auto ;  - НЕ ПРАЦЮЄ    НЕ ПРАЦЮЄ     НЕ ПРАЦЮЄ*/
     font-weight: 400;
     font-size: 13px;
     line-height: 1.29;
@@ -530,6 +552,27 @@ body {
     align-items: center;
 }
 
+.fotos {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    border: 5px solid #ffffff;
+}
+
+.foto-two {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.fotos:hover .foto-two {
+    left: 0;
+}
+
+
 .recipу-container {
     width: 516px;
     margin: 0 auto;
@@ -628,4 +671,140 @@ body {
 .product-card:focus .price {
     border: 1px solid #FD9222;
     color: #fd9222;
+}
+
+/*  =====================   TOp Sellers   ========================== */
+
+.sellers-list {
+    display: flex;
+    gap: 16px;
+}
+
+.sellers-item {
+    width: calc((100 - 2*16px)/3);
+}
+
+.sellers-item .section-subtitle {
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    border-left: 1px solid rgba(17, 17, 17, 0.1);
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 0 0 15px 15px;
+    width: 368px;
+    height: 80px;
+}
+
+.sellers-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.sellers-text {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    text-indent: 10%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    padding: 40px 20px;
+    /* background: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url("");
+            border: #ffffff;
+            border-radius: 15px; */
+    backdrop-filter: blur(15px);
+    background: linear-gradient(161deg, );
+}
+
+.sellers-item:hover .sellers-text {
+    left: 0;
+}
+
+.seller-list li {
+    padding-bottom: 30px;
+}
+
+/* ================ CHOCOLATE IS LOVED ================ */
+.review-section {
+    padding-bottom: 120px;
+}
+
+.review-title {
+    margin-bottom: 90px;
+}
+
+.review-list {
+    display: flex;
+    text-align: center;
+    gap: 28px;
+}
+
+
+.review-item {
+    width: calc((100% -56px) / 3);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    background: #fff;
+    position: relative;
+}
+
+.review-item h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: none;
+    padding-top: 56px;
+}
+
+.review-item p {
+    max-width: 360px;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.review-item img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-review {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+}
+
+/* ====================  Footer   ==================== */
+
+.footer-section {
+    background: #1e1823;
+    color: #ffffff;
+}
+
+.footer-devis {
+    width: 300px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    padding-top: 50px;
+    margin-left: 32px;
 }
