@@ -400,6 +400,7 @@ margin-bottom: 100px;
     color: #111111;
     border: 1px solid #fd9222;
     border-radius: 15px;
+    overflow: auto;
 }
 
 .chocolate-text .card-title {
@@ -439,9 +440,9 @@ margin-bottom: 100px;
 }
 
 .chocolate-text .card-text {
-    /* overflow: auto ;  - НЕ ПРАЦЮЄ    НЕ ПРАЦЮЄ     НЕ ПРАЦЮЄ*/
+    
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
     padding: 14px 15px 20px;
