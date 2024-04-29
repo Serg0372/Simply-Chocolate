@@ -97,8 +97,7 @@ body {
     z-index: 100000;
     background-color: #fafafa;
     width: 100%;
-    /* backdrop-filter: blur(15px);
-        background: linear-gradient(161deg, ); */
+margin-bottom: 100px;    
 }
 
 .header-nav {
@@ -186,10 +185,11 @@ body {
     height: 24px;
 }
 
-.social-icon{
+.social-icon {
     width: 24px;
-        height: 24px;
+    height: 24px;
 }
+
 .social-link {
     display: block;
     width: 24px;
@@ -217,7 +217,7 @@ body {
 /* =================== HERO ====================== */
 
 .hero-section {
-       background-color: rgba(17, 17, 17, 0.6);
+    background-color: rgba(17, 17, 17, 0.6);
     border-radius: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -226,7 +226,7 @@ body {
         url("/img/hero/chocolate_main.jpg");
     background-size: cover;
     color: #ffffff;
-    
+
 }
 
 .hero-container {
@@ -480,7 +480,7 @@ body {
     position: relative;
 }
 
-.ingredients-title:nth-child(4n+1) {
+.ingredients-title:nth-child(odd) {
     background-color: #FD9222;
     color: #fff;
 }
@@ -504,34 +504,36 @@ body {
     margin-left: auto;
     margin-right: 14px;
     margin-top: 14px;
-}
+    }
 
 
 /* НЕ ПРАЦЮЄ        НЕ ПРАЦЮЄ           НЕ  ПРАЦЮЄ         НЕ ПРАЦЮЄ  
 
 ІКОНКІ З МАКЕТА ЗОВСІМ НЕ РЕАГУЮТЬ НА КОЛІР - ЗАМІНЯЮ НА БЕЗКОШТОВНІ ПРОСТІ - ВСЮДУ ПРАЦЮЮТЬ, А ПРИ ЦІЙ ФОРМУЛІ НІ                 */
 .arrow:nth-child(even) {
-    fill: #FD9222;
-}
-
-/* НЕ ПРАЦЮЄ         НЕ ПРАЦЮЄ         НЕ  ПРАЦЮЄ        НЕ ПРАЦЮЄ  */
-.arrow:nth-child(even):hover,
-.arrow:nth-child(even):focus {
-    background-color: #FD9222;
-    fill: #fafafa;
+    fill: #fd9222;
 }
 
 .arrow:nth-child(odd) {
     fill: #fafafa;
 }
 
-.arrow:nth-child(odd):hover,
+/* НЕ ПРАЦЮЄ         НЕ ПРАЦЮЄ         НЕ  ПРАЦЮЄ        НЕ ПРАЦЮЄ  */
+/* .arrow:nth-child(even):hover,
+.arrow:nth-child(even):focus {
+    background-color: #FD9222;
+    fill: #fafafa;
+    stroke: #FD9222;
+    stroke-width: 2px;
+} */
+
+/* .arrow:nth-child(odd):hover,
 .arrow:nth-child(odd):focus {
     background-color: #fafafa;
     fill: #FD9222;
     stroke: #fafafa;
     stroke-width: 2px;
-}
+} */
 
 .ingredient-foto {
     margin: 0 23px 26px;
