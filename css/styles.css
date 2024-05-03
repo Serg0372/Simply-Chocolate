@@ -41,6 +41,8 @@ body {
     background: #fafafa;
     color: #111111;
     margin: 0;
+    padding: 0;
+    padding-top: 85px;
 }
 
 .section {
@@ -94,67 +96,22 @@ body {
 
 .header-section {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100000;
     background-color: #fafafa;
     width: 100%;
-margin-bottom: 100px;    
+    margin-bottom: 100px;
+}
+.header-container{
+    display: flex;
+    column-gap: 90px;
 }
 
 .header-nav {
     display: flex;
+    flex-grow: 1;
     align-items: center;
-}
-
-.nav-box-header {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    gap: 40px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.current {
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-list:hover .current::after,
-.nav-list:focus .current::after {
-    content: '';
-    background-color: #FD9222;
-    border-radius: 2px;
-    height: 4px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-
-}
-
-.nav-list:hover,
-.nav-list:focus {
-    color: #FD9222;
-}
-
-.nav-list:hover .current,
-.nav-list:focus .current {
-    color: #FD9222;
-
-}
-
-.heder-nav-list {
-    display: flex;
-    margin-right: 90px;
-    column-gap: 24px;
-}
-
-.nav-link-name {
-    display: block;
-    padding: 24px 0 36px;
 }
 
 .logo {
@@ -167,7 +124,7 @@ margin-bottom: 100px;
     line-height: 1.11;
     letter-spacing: -0.03em;
     color: inherit;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-italica {
@@ -177,7 +134,6 @@ margin-bottom: 100px;
 .logo:hover,
 .logo:focus {
     color: #FD9222;
-
 }
 
 .logo-svg {
@@ -185,26 +141,52 @@ margin-bottom: 100px;
     height: 24px;
 }
 
-.social-icon {
-    width: 24px;
-    height: 24px;
+.nav-box-header {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
 }
 
-.social-link {
+.heder-nav-list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.nav-list {
+    display: flex;
+   
+    gap: 40px;
+}
+
+.nav-list:hover,
+.nav-list:focus {
+    color: #FD9222;
+}
+
+.nav-link-name {
     display: block;
-    width: 24px;
-    height: 24px;
-    fill: #ffffff;
-    stroke-width: 1.50px;
-    stroke: #111111;
-    transition: stroke 1000ms cubic-bezier(1, 80, 80, 1);
+    padding: 24px 0 36px;
+}
+.current {
+    position: relative;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current::after {
+    content: '';
+    background-color: #ffffff;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: background-color 1650ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.social-link:hover,
-.social-link:focus {
-    stroke: #FD9222;
-
+.nav-list:hover .current::after,
+.nav-list:focus .current::after {
+    background-color: #FD9222;
 }
 
 .heder-social-list {
@@ -212,6 +194,30 @@ margin-bottom: 100px;
     gap: 24px;
     margin: 24px 0 36px;
 }
+
+.social-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill:none;
+    stroke-width: 1.50px;
+    stroke: #111111;
+    transition: stroke 10000ms cubic-bezier(1, 80, 80, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+    stroke: #FD9222;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
 
 /* --====================== Main contant ======================= */
 /* =================== HERO ====================== */
@@ -440,7 +446,7 @@ margin-bottom: 100px;
 }
 
 .chocolate-text .card-text {
-    
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -505,7 +511,7 @@ margin-bottom: 100px;
     margin-left: auto;
     margin-right: 14px;
     margin-top: 14px;
-    }
+}
 
 
 /* НЕ ПРАЦЮЄ        НЕ ПРАЦЮЄ           НЕ  ПРАЦЮЄ         НЕ ПРАЦЮЄ  
