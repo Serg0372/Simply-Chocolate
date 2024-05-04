@@ -153,7 +153,6 @@ body {
 .logo:focus {
     color: #FD9222;
    transform: scale(1.2);
-
 }
 
 .logo-svg {
