@@ -275,7 +275,7 @@ body {
     margin: 0 auto;
     height: 600px;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
-        url("/img/hero/chocolate_main.jpg");
+        url("/images/hero/chocolate_main.jpg");
     background-size: cover;
     color: #ffffff;
 }
@@ -635,7 +635,7 @@ body {
     content: '';
     width: 8px;
     height: 8px;
-    background-image: url(/img/hOW-ITS-made/Ellipse.svg);
+    background-image: url(/images/how-its-made/Ellipse.svg);
 }
 
 .text-made {
