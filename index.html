@@ -87,19 +87,124 @@
     </header>
 
     <!-- ========= Main contant ============== -->
-    <main class="button-arrow">
+    <main>
+      <!-- ======= Button UP - DOWN ======= -->
       <a class="arrow-up" href="#">
         <svg width="32" height="32">
           <g class="anim">
-            <use href="./images/icon/symbol-defs.svg#icon-arrow-up2"></use>
+            <use href="./images/icon/sprite.svg#icon-arrow-up2"></use>
           </g>
         </svg>
       </a>
       <a class="arrow-up arrow-up-two" href="#contacts">
         <svg width="32" height="32">
-          <use href="./images/icon/symbol-up.svg#icon-arrow-down2"></use>
+          <use href="./images/icon/sprite.svg#icon-arrow-down2"></use>
         </svg>
       </a>
+
+      <!-- ======= Backdrop ======= -->
+
+      <div class="backdrop is-open">
+        <div class="backdrop-box">
+          <button type="button" class="form-button-close">
+            <svg class="button-close" width="28" height="28">
+              <use href="./images/icon/sprite.svg#icon-x-close"></use>
+            </svg>
+          </button>
+          <div class="backdrop-form-box">
+            <p class="backdrop-text">
+              leave a review about
+              <span class="orange-word">our chocolate</span>
+            </p>
+            <form class="backdrop-form">
+              <div class="backdrop-form-field-wrapper">
+                <label class="backdrop-form-field-label" for="user-name"
+                  >Name
+                </label>
+                <div class="backdrop-form-box-input">
+                  <input
+                    class="backdrop-form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    pattern="[a-zA-ZА-Яа-яїЇіІєЄ'Ґґ]+"
+                    required
+                  />
+                  <svg class="icons-form" width="24" height="24">
+                    <use href="./images/icon/sprite.svg#icon-user"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="backdrop-form-field-wrapper">
+                <label class="backdrop-form-field-label" for="user-email"
+                  >Email</label
+                >
+                <div class="backdrop-form-box-input">
+                  <input
+                    class="backdrop-form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    required
+                  />
+                  <svg class="icons-form" width="24" height="24">
+                    <use href="./images/icon/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="backdrop-form-field-wrapper">
+                <label class="backdrop-form-field-label" for="user-phone"
+                  >Phone number</label
+                >
+                <div class="backdrop-form-box-input">
+                  <input
+                    class="backdrop-form-input"
+                    type="text"
+                    name="user-phone"
+                    id="user-phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    required
+                  />
+                  <svg class="icons-form" width="24" height="24">
+                    <use href="./images/icon/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="backdrop-form-field-wrapper">
+                <label class="backdrop-form-field-label" for="user-comments"
+                  >Comment</label
+                >
+                <textarea
+                  class="backdrop-form-message"
+                  name="user-comments"
+                  id="user-comments"
+                  placeholder="Enter text"
+                  required
+                ></textarea>
+              </div>
+              <div class="backdrop-form-field-wrapper">
+                <input
+                  class="visually-hidden"
+                  id="privacy-policy"
+                  type="checkbox"
+                  name="privacy-policy"
+                  value="true"
+                  required
+                />
+                <label class="backdrop-form-privacy-policy" for="privacy-policy"
+                  ><spann class="checkbox-kastoms">
+                    <svg class="icon-checkbox" width="14" height="14">
+                      <use href="./images/icon/sprite.svg#icon-icon"></use>
+                    </svg> </spann
+                  >I accept the terms and conditions of the
+                  <a class="orange-word" href="#">Privacy Policy</a></label
+                >
+              </div>
+              <button class="backdrop-form-button" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
 
       <!-- ====== Hero ====== -->
       <section class="hero-section">
@@ -129,7 +234,7 @@
       <!-- ==== Our Benefits ===== -->
       <section class="benefits-section" id="benefits">
         <div class="container">
-          <h2 class="benefits-section-title">Our Benefits</h2>
+          <h2 class="benefits-section-title .visually-hidden">Our Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-column">
               <div class="benefits-list-icon">
@@ -170,7 +275,9 @@
             <li class="benefits-list-column">
               <div class="benefits-list-icon">
                 <svg class="benefits-icon" width="32" height="32">
-                  <use href="./images/icon/sprite.svg#icon-la_utensil-spoon"></use>
+                  <use
+                    href="./images/icon/sprite.svg#icon-la_utensil-spoon"
+                  ></use>
                 </svg>
               </div>
               <h3 class="section-subtitle subtitle-benefits">Own production</h3>
@@ -915,7 +1022,6 @@
               type="email"
               placeholder="Enter your email"
               required
-              
             />
             <button class="button-subscribe" type="submit">Subscribe</button>
           </form>
