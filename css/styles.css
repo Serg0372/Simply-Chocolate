@@ -1,5 +1,10 @@
 /*  ============== basic settings ============== */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 ul,
 ol {
     list-style-type: none;
@@ -71,19 +76,19 @@ body {
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: -0.03em;
+    /* шрифт CAPS LOCK */
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 50px;
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-title:hover {
     color: #fd9222;
-    transition: 350ms;
 }
 
 .section-title:hover .orange-word {
     color: #111111;
-    transition: 350ms;
 }
 
 .section-subtitle {
@@ -104,9 +109,10 @@ body {
 
 .orange-word {
     color: #fd9222;
-    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Сховати елемент від очей, але не для скринридера */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -123,9 +129,13 @@ body {
 /* ===============  Header  =============== */
 
 .header-section {
+    /* зафиксована секція */
     position: fixed;
+    /* зафіксований край зверху */
     top: 0;
+    /* зафіксований край зліва */
     left: 0;
+    /* поверх основних окон */
     z-index: 1000;
     background-color: #fafafa;
     width: 100%;
@@ -151,9 +161,9 @@ body {
     font-size: 18px;
     line-height: 1.11;
     letter-spacing: -0.03em;
-    color: inherit;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-        transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: currentColor;
+    transition: color 1350ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-italica {
@@ -182,16 +192,25 @@ body {
     column-gap: 24px;
 }
 
+.nav-list {
+    transition: color 1350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-list:hover,
 .nav-list:focus {
     color: #fd9222;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link-name {
     display: block;
     padding: 24px 0 36px;
     position: relative;
+    transition: transform 1350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-name:hover,
+.nav-link-name:focus {
+    transform: scale(1.2);
 }
 
 .nav-link-name::after {
@@ -202,7 +221,7 @@ body {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: 3px;
     transition: background-color 1150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -222,7 +241,8 @@ body {
     line-height: 0;
     fill: none;
     stroke: #111111;
-    transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 1350ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -250,25 +270,23 @@ body {
     z-index: 999;
     width: 50px;
     height: 50px;
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .arrow-up-two {
     bottom: 80px;
     right: 50px;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(1);
 }
 
-.arrow-up:hover {
+.arrow-up:hover,
+.arrow-up:focus {
     background-color: #fd9222;
     border: 2px solid #ffffff;
     stroke: #ffffff;
     fill: #ffffff;
-}
-
-.anim {
-    transform-box: fill-box;
-    transform-origin: center center;
-    transform: scale(1);
 }
 
 .arrow-up:hover {
@@ -291,7 +309,9 @@ body {
 }
 
 .backdrop.is-open {
+    /* прозорість */
     opacity: 1;
+    /* елемент приховано чи ні */
     visibility: visible;
 }
 
@@ -306,6 +326,7 @@ body {
 }
 
 .form-button-close {
+    /* фон прозорий */
     background-color: transparent;
     position: absolute;
     stroke: #111111;
@@ -429,19 +450,18 @@ body {
     border-radius: 6px;
     border: 1px solid rgba(17, 17, 17, 0.14);
     cursor: pointer;
-stroke: #ffffff;
-fill: #ffffff;
+    stroke: #ffffff;
+    fill: #ffffff;
 }
 
-.visually-hidden:checked + .backdrop-form-privacy-policy .checkbox-kastoms {
+.visually-hidden:checked+.backdrop-form-privacy-policy .checkbox-kastoms {
     background-color: #fd9222;
 }
 
 .backdrop-form-privacy-policy {
     font-size: 14px;
-        letter-spacing: -0.02em;
-        color: rgba(64, 64, 64, 0.6);
-
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.6);
 }
 
 .backdrop-form-privacy-policy .orange-word {
@@ -495,7 +515,13 @@ fill: #ffffff;
     line-height: 1.21;
     letter-spacing: -0.03em;
     margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.2);
+    transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.hero-title:hover{
+    color: #ffffff;
+    }
 
 .buttons-hero {
     display: flex;
@@ -512,13 +538,14 @@ fill: #ffffff;
     background-color: #fd9222;
     color: currentColor;
     margin-right: 14px;
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-buy-now:hover,
 .button-buy-now:focus {
     background-color: #fcf1e0;
     color: #fd9222;
+    scale: 1.2;
 }
 
 .link-how-its-made {
@@ -529,13 +556,14 @@ fill: #ffffff;
     height: 45px;
     font-weight: 600;
     font-size: 14px;
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-how-its-made:hover,
 .link-how-its-made:focus {
     border-color: #fd9222;
     color: #fd9222;
+    scale: 1.2;
 }
 
 .link-scroll-down {
@@ -548,7 +576,7 @@ fill: #ffffff;
     line-height: 1.29;
     gap: 14px;
     fill: #fd9222;
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-button {
@@ -559,19 +587,27 @@ fill: #ffffff;
     background-color: #ffffff;
     width: 38px;
     height: 38px;
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.icon-scroll{
+     transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link-scroll-down:hover,
 .link-scroll-down:focus {
     color: #fd9222;
 }
 
+.link-scroll-down:hover .scroll-button .icon-scroll,
+.link-scroll-down:focus .scroll-button .icon-scroll {
+    fill: #ffffff;
+    scale: 1.2;
+}
+
 .link-scroll-down:hover .scroll-button,
 .link-scroll-down:focus .scroll-button {
     background-color: #fd9222;
-    fill: #ffffff;
-}
+    scale: 1.2;
+   }
 
 /* ===================== Our Benefits ====================== */
 
@@ -580,14 +616,21 @@ fill: #ffffff;
     margin-top: 60px;
 }
 
-.visually-hidden .subtitle-benefits {
-    color: #ffffff;
-    padding-bottom: 18px;
+.subtitle-benefits {
+    color: rgba(255, 255, 255, 0.3);
+    padding: 18px 0;
     text-align: left;
+transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-benefits {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.3);
+transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subtitle-benefits:hover, 
+.text-benefits:hover{
+    color: rgba(255, 255, 255, 1);
 }
 
 .benefits-list {
@@ -611,8 +654,13 @@ fill: #ffffff;
     width: 62px;
     height: 62px;
     border-radius: 50%;
-    margin-bottom: 22px;
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.benefits-list-icon:hover{
+    background-color: #fafafa;
+}
+
 
 .benefits-list-column:not(:last-child)::after {
     content: "";
@@ -623,6 +671,11 @@ fill: #ffffff;
     width: 1px;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.5);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefits-list-column:hover.benefits-list-column:not(:last-child)::after {
+    background-color: #fd9222;
 }
 
 /* ===================== Ingredients ====================== */
@@ -692,7 +745,7 @@ fill: #ffffff;
 
 .ingredients-title:hover .chocolate-text {
     top: 0;
-    transition: 900ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-ingridients {
@@ -749,12 +802,12 @@ fill: #ffffff;
     margin-top: 14px;
 }
 
-.arrow-orange {
-    stroke: #fd9222;
+.ingredients-title:nth-child(odd) .arrow {
+    stroke: #ffffff;
 }
 
-.arrow-white {
-    stroke: #ffffff;
+.ingredients-title:nth-child(even) .arrow {
+    stroke: #fd9222;
 }
 
 .ingredient-foto {
