@@ -1110,8 +1110,10 @@ body {
     color: rgba(17, 17, 17, 1);
 }
 
-.review-foto{border: 1px solid #ffffff;
-    border-radius: 50%;}
+.review-foto {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
 
 .review-item .review-foto {
     position: absolute;
@@ -1124,11 +1126,11 @@ body {
 }
 
 .review-item:hover .review-foto {
-   background-color: #faf6ef;
-        border: 1px solid #fd9222;
+    background-color: #faf6ef;
+    border: 1px solid #fd9222;
     border-radius: 50%;
-    }
-        
+}
+
 .button-review {
     display: flex;
     align-items: flex-start;
@@ -1143,8 +1145,7 @@ body {
     width: 222px;
     height: 50px;
     transform: scale(1);
-    transition:color 1350ms cubic-bezier(0.4, 0, 0.2, 1),transform 1350ms cubic-bezier(0.4, 0, 0.2, 1), font-weight 1350ms cubic-bezier(0.4, 0, 0.2, 1)
-    ;
+    transition: color 1350ms cubic-bezier(0.4, 0, 0.2, 1), transform 1350ms cubic-bezier(0.4, 0, 0.2, 1), font-weight 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-review:hover,
@@ -1159,6 +1160,8 @@ body {
 .footer-section {
     background: #1e1823;
     color: #ffffff;
+
+   
 }
 
 .footer-container {
@@ -1184,7 +1187,7 @@ body {
 }
 
 .footer-devis-box {
-    display: flex; 
+    display: flex;
 }
 
 .footer-devis {
@@ -1219,7 +1222,7 @@ body {
     padding-bottom: 14px;
 }
 
-.contants-item{
+.contants-item {
     transform: scale(1);
     transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1231,7 +1234,7 @@ body {
 .contants-item:hover {
     color: #fd9222;
     transform: scale(1.2);
- }
+}
 
 .nav-list-footer-box {
     display: flex;
@@ -1273,9 +1276,10 @@ body {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .nav-item-footer {
-transform: scale(1);
-transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
+    transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item-footer:hover {
@@ -1306,7 +1310,7 @@ transition: 1350ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 17px 40px;
     min-width: 137px;
     height: 52px;
-transform: scale(1);
+    transform: scale(1);
     background: #fd9222;
     font-weight: 600;
     font-size: 14px;
