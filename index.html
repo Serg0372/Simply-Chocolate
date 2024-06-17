@@ -29,33 +29,34 @@
               <use href="./images/icon/sprite.svg#icon-chocolate"></use>
             </svg>
           </a>
-          <div class="nav-box-header">
-            <ul class="heder-nav-list">
-              <!-- <li class="nav-list">
-                <a class="nav-link-name" href="./index.html">Home</a>
-              </li> -->
-              <li class="nav-list">
-                <a class="nav-link-name" href="#ingredients">Ingredients</a>
-              </li>
-              <li class="nav-list">
-                <a class="nav-link-name" href="#chocolate">How it’s made?</a>
-              </li>
-              <li class="nav-list">
-                <a class="nav-link-name" href="#price">Products</a>
-              </li>
-              <li class="nav-list">
-                <a class="nav-link-name" href="#topselers">Top selers</a>
-              </li>
 
-              <li class="nav-list">
-                <a class="nav-link-name" href="#review">Chocolate is loved</a>
-              </li>
-              <li class="nav-list">
-                <a class="nav-link-name" href="#contacts">Contacts</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="heder-nav-list">
+            <li class="nav-list">
+              <a class="nav-link-name" href="#ingredients">Ingredients</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link-name" href="#chocolate">How it’s made?</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link-name" href="#price">Products</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link-name" href="#topselers">Top selers</a>
+            </li>
+
+            <li class="nav-list">
+              <a class="nav-link-name" href="#review">Chocolate is loved</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link-name" href="#contacts">Contacts</a>
+            </li>
+          </ul>
         </nav>
+        <button class="burger-button" type="button">
+          <svg class="button-svg" width="28" height="28">
+            <use href="./images/icon/sprite.svg#icon-menu-03"></use>
+          </svg>
+        </button>
         <ul class="heder-social-list">
           <li class="social-item">
             <a
@@ -63,21 +64,21 @@
               href="https://www.instagram.com"
               target="_blank"
             >
-              <svg class="social-icon" width="24" height="24">
+              <svg class="social-icon">
                 <use href="./images/icon/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://facebook.com" target="_blank">
-              <svg class="social-icon" width="24" height="24">
+              <svg class="social-icon">
                 <use href="./images/icon/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="https://twitter.com" target="_blank">
-              <svg class="social-icon" width="24" height="24">
+              <svg class="social-icon">
                 <use href="./images/icon/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -90,19 +91,18 @@
     <main>
       <!-- ======= Button UP - DOWN ======= -->
       <a class="arrow-up" href="#">
-        <svg width="32" height="32">
+        <svg class="arrow-icon">
           <use href="./images/icon/sprite.svg#icon-arrow-up2"></use>
         </svg>
       </a>
       <a class="arrow-up arrow-up-two" href="#contacts">
-        <svg width="32" height="32">
+        <svg class="arrow-icon">
           <use href="./images/icon/sprite.svg#icon-arrow-down2"></use>
         </svg>
       </a>
 
       <!-- ======= Backdrop ======= -->
 
-      <!-- <div class="backdrop is-open"> -->
       <div class="backdrop">
         <div class="backdrop-box">
           <button type="button" class="form-button-close">
@@ -112,8 +112,10 @@
           </button>
           <div class="backdrop-form-box">
             <p class="backdrop-text">
-              leave a review about
-              <span class="orange-word">our chocolate</span>
+              leave a review
+              <span class="wrap-word"
+                >about <span class="orange-word">our chocolate</span></span
+              >
             </p>
             <form class="backdrop-form">
               <div class="backdrop-form-field-wrapper">
@@ -205,6 +207,85 @@
         </div>
       </div>
 
+      <!-- ======= Modal window ======= -->
+      <div class="modal">
+        <div class="modal-box">
+          <button type="button" class="form-modal-close">
+            <svg class="button-close" width="28" height="28">
+              <use href="./images/icon/sprite.svg#icon-x-close"></use>
+            </svg>
+          </button>
+          <div class="box-nav-modal">
+            <ul class="modal-nav-list">
+              <li class="modal-list">
+                <a class="modal-link-name" href="#ingredients">Ingredients</a>
+              </li>
+              <li class="modal-list">
+                <a class="modal-link-name" href="#chocolate">How it’s made?</a>
+              </li>
+              <li class="modal-list">
+                <a class="modal-link-name" href="#price">Products</a>
+              </li>
+              <li class="modal-list">
+                <a class="modal-link-name" href="#topselers">Top selers</a>
+              </li>
+
+              <li class="modal-list">
+                <a class="modal-link-name" href="#review">Chocolate is loved</a>
+              </li>
+              <li class="modal-list">
+                <a class="modal-link-name" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="modal-social-list">
+              <li class="modal-social-item">
+                <a
+                  class="modal-social-link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                >
+                  <svg class="modal-social-icon" width="20" height="20">
+                    <use href="./images/icon/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="modal-social-item">
+                <a
+                  class="modal-social-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                >
+                  <svg class="modal-social-icon" width="20" height="20">
+                    <use href="./images/icon/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="modal-social-item">
+                <a
+                  class="modal-social-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                >
+                  <svg class="modal-social-icon" width="20" height="20">
+                    <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== video ===== -->
+      <section class="section-video">
+        <div class="container">
+          <video autoplay muted loop class="hero-video">
+            <source src="/images/chocolad.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
       <!-- ====== Hero ====== -->
       <section class="hero-section">
         <div class="container hero-container">
@@ -213,9 +294,11 @@
             of pure delight!
           </h1>
           <div class="buttons-hero">
-            <a class="button-buy-now" href="#price"> Buy now</a>
-            <!-- <button class="button-buy-now" type="button"></button> -->
-            <a class="link-how-its-made" href="#chocolate">How it's made</a>
+            <div class="buttons-hero-box">
+              <a class="button-buy-now" href="#price"> Buy now</a>
+
+              <a class="link-how-its-made" href="#chocolate">How it's made</a>
+            </div>
             <a class="link-scroll-down" href="#benefits"
               >Scroll down
               <span class="scroll-button">
@@ -233,7 +316,7 @@
       <!-- ==== Our Benefits ===== -->
       <section class="benefits-section" id="benefits">
         <div class="container">
-          <h2 class="benefits-section-title .visually-hidden">Our Benefits</h2>
+          <h2 class="benefits-section-title visually-hidden">Our Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-column">
               <div class="benefits-list-icon">
@@ -312,13 +395,36 @@
                     <use href="./images/icon/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <img
-                  class="ingredient-foto"
-                  src="./images/Ingredients/milk_chocolate.png"
-                  alt="MILK CHOCOLATE"
-                  width="214"
-                  height="160"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desc_milk_chocolate-min.png    1x,
+                      ./images/ingredients/desc_milk_chocolate_x2-min.png
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_milk_chocolate-min.png        1x,
+                      ./images/ingredients/tab_mob_milk_chocolate_x2-min.png.png
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_milk_chocolate-min.png        1x,
+                      ./images/ingredients/tab_mob_milk_chocolate_x2-min.png.png
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="ingredient-foto"
+                    src="./images/ingredients/desc_milk_chocolate-min.png"
+                    alt="MILK CHOCOLATE"
+                  />
+                </picture>
+
                 <h3 class="section-subtitle">MILK CHOCOLATE</h3>
               </div>
               <div class="chocolate-text">
@@ -344,13 +450,34 @@
                     <use href="./images/icon/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <img
-                  class="ingredient-foto"
-                  src="./images/Ingredients/milk.png"
-                  alt="Milk"
-                  width="214"
-                  height="160"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desk_milk-min.png    1x,
+                      ./images/ingredients/desk_milk_x2-min.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_milk-min.png    1x,
+                      ./images/ingredients/tab_mob_milk_x2-min.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_milk-min.png    1x,
+                      ./images/ingredients/tab_mob_milk_x2-min.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="ingredient-foto"
+                    src="./images/ingredients/desk_milk-min.png"
+                    alt="Milk"
+                  />
+                </picture>
                 <h3 class="section-subtitle">MILK</h3>
               </div>
               <div class="chocolate-text">
@@ -376,13 +503,36 @@
                     <use href="./images/icon/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <img
-                  class="ingredient-foto"
-                  src="./images/Ingredients/nute.png"
-                  alt="nuts"
-                  width="214"
-                  height="160"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desk_nute-min.png    1x,
+                      ./images/ingredients/desk_nute_x2-min.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_nute-min.png    1x,
+                      ./images/ingredients/tab_mob_nute_x2-min.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_nute-min.png    1x,
+                      ./images/ingredients/tab_mob_nute_x2-min.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="ingredient-foto"
+                    src="./images/ingredients/desk_nute-min.png"
+                    alt="nuts"
+                  />
+                </picture>
+
                 <h3 class="section-subtitle">NUTS</h3>
               </div>
               <div class="chocolate-text">
@@ -408,13 +558,35 @@
                     <use href="./images/icon/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <img
-                  class="ingredient-foto"
-                  src="./images/Ingredients/semi_sweet_chokolate.png"
-                  alt="SEMI - SWEET CHOCOLATE"
-                  width="214"
-                  height="160"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desk_semi_sweet_chokolate-min.png    1x,
+                      ./images/ingredients/desk_semi_sweet_chokolate_x2-min.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_semi_sweet_chokolate-min.png    1x,
+                      ./images/ingredients/tab_mob_semi_sweet_chokolate_x2-min.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_semi_sweet_chokolate-min.png    1x,
+                      ./images/ingredients/tab_mob_semi_sweet_chokolate_x2-min.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="ingredient-foto"
+                    src="./images/ingredients/desk_semi_sweet_chokolate-min.png"
+                    alt="SEMI - SWEET CHOCOLATE"
+                  />
+                </picture>
+
                 <h3 class="section-subtitle">SEMI - SWEET CHOCOLATE</h3>
               </div>
               <div class="chocolate-text">
@@ -442,13 +614,35 @@
                     <use href="./images/icon/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <img
-                  class="ingredient-foto"
-                  src="./images/Ingredients/cacao.png"
-                  alt="CACAO"
-                  width="214"
-                  height="160"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desk_cacao-min.png    1x,
+                      ./images/ingredients/desk_cacao_x2-min.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_cacao-min.png    1x,
+                      ./images/ingredients/tab_mob_cacao_x2-min.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_cacao-min.png    1x,
+                      ./images/ingredients/tab_mob_cacao_x2-min.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="ingredient-foto"
+                    src="./images/ingredients/desk_cacao-min.png"
+                    alt="CACAO"
+                  />
+                </picture>
+
                 <h3 class="section-subtitle">CACAO</h3>
               </div>
               <div class="chocolate-text">
@@ -474,13 +668,36 @@
                     <use href="./images/icon/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <img
-                  class="ingredient-foto"
-                  src="./images/Ingredients/raspberry.png"
-                  alt="RASPBERRY"
-                  width="214"
-                  height="160"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desk_raspberry-min.png    1x,
+                      ./images/ingredients/desk_raspberry_x2-min.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_raspberry-min.png    1x,
+                      ./images/ingredients/tab_mob_raspberry_x2-min.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_raspberry-min.png    1x,
+                      ./images/ingredients/tab_mob_raspberry_x2-min.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="ingredient-foto"
+                    src="./images/ingredients/desk_raspberry-min.png"
+                    alt="RASPBERRY"
+                  />
+                </picture>
+
                 <h3 class="section-subtitle">RASPBERRY</h3>
               </div>
               <div class="chocolate-text">
@@ -505,13 +722,36 @@
                     <use href="./images/icon/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-                <img
-                  class="ingredient-foto"
-                  src="./images/Ingredients/coconut.png"
-                  alt="COCONUT OIL"
-                  width="214"
-                  height="160"
-                />
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/ingredients/desc_coconut-min.png    1x,
+                      ./images/ingredients/desc_coconut_x2-min.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/ingredients/tab_mob_coconut-min.png    1x,
+                      ./images/ingredients/tab_mob_coconut_x2-min.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/ingredients/tab_mob_coconut-min.png   1x,
+                      ./images/ingredients/tab_mob_coconut_x2-min.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="ingredient-foto"
+                    src="./images/ingredients/desc_coconut-min.png"
+                    alt="COCONUT OIL"
+                  />
+                </picture>
+
                 <h3 class="section-subtitle">COCONUT OIL</h3>
               </div>
               <div class="chocolate-text">
@@ -542,20 +782,63 @@
           <div class="made-box">
             <div class="fotos">
               <div class="foto-one">
-                <img
-                  src="./images/how-its-made/how_its_made.png"
-                  alt="how_its_made_img"
-                  width="600"
-                  height="400"
-                />
+                <picture class="ingredient-foto">
+                  <source
+                    srcset="
+                      ./images/how-its-made/desk_how_its_made.jpg    1x,
+                      ./images/how-its-made/desk_how_its_made_x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/how-its-made/tab_how_its_made.jpg    1x,
+                      ./images/how-its-made/tab_how_its_made_x2.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/how-its-made/mob_how_its_made_1.jpg  1x,
+                      ./images/how-its-made/mob_how_its_made_x2.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/how-its-made/desk_how_its_made.jpg"
+                    alt="how_its_made_img"
+                  />
+                </picture>
               </div>
               <div class="foto-two">
-                <img
-                  src="./images/how-its-made/mmmm.png"
-                  alt="how_its_made_two_img"
-                  width="600"
-                  height="400"
-                />
+                <picture class="ingredient-foto">
+                  <source
+                    srcset="
+                      ./images/how-its-made/desk_how_its_made_1.jpg    1x,
+                      ./images/how-its-made/desk_how_its_made_1_x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/how-its-made/tab_how_its_made_1.jpg    1x,
+                      ./images/how-its-made/tab_how_its_made_1_x2.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/how-its-made/mob_how_its_made_2.jpg    1x,
+                      ./images/how-its-made/mob_how_its_made_2_x2.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+
+                  <img
+                    src="./images/how-its-made/desk_how_its_made_1.jpg"
+                    alt="how_its_made_img"
+                  />
+                </picture>
               </div>
             </div>
 
@@ -610,88 +893,128 @@
           <ul class="products-list">
             <li class="product-card">
               <img
-                src="./images/products/orange.png"
+                src="./images/products/orange-min.png"
+                srcset="
+                  ./images/products/orange-min.png    1x,
+                  ./images/products/orange_x2-min.png 2x
+                "
                 alt="ORANGE chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">ORANGE</h3>
               <p class="list-text">Dark chocolate</p>
               <button type="button" class="price">45 UAH</button>
             </li>
             <li class="product-card">
               <img
-                src="./images/products/apple_cranberry.png"
+                src="./images/products/apple_cranberry-min.png"
+                srcset="
+                  ./images/products/apple_cranberry-min.png    1x,
+                  ./images/products/apple_cranberry_x2-min.png 2x
+                "
                 alt="APPLE&CRANBERRY chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">APPLE&CRANBERRY</h3>
               <p class="list-text">Milk chocolate</p>
               <button type="button" class="price">50 UAH</button>
             </li>
             <li class="product-card">
               <img
-                src="./images/products/lime_sea_salt.png"
+                src="./images/products/lime_sea_salt-min.png"
+                srcset="
+                  ./images/products/lime_sea_salt-min.png    1x,
+                  ./images/products/lime_sea_salt_x2-min.png 2x
+                "
                 alt="LIME&SEA SALT chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">LIME&SEA SALT</h3>
               <p class="list-text">Dark chocolate</p>
               <button type="button" class="price">66 UAH</button>
             </li>
             <li class="product-card">
               <img
-                src="./images/products/pineapple.png"
+                src="./images/products/pineapple-min.png"
+                srcset="
+                  ./images/products/pineapple-min.png    1x,
+                  ./images/products/pineapple_x2-min.png 2x
+                "
                 alt="PINEAPPLE chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">PINEAPPLE</h3>
               <p class="list-text">Dark chocolate</p>
               <button type="button" class="price">54 UAH</button>
             </li>
             <li class="product-card">
               <img
-                src="./images/products/classic.png"
+                src="./images/products/classic-min.png"
+                srcset="
+                  ./images/products/classic-min.png    1x,
+                  ./images/products/classic_x2-min.png 2x
+                "
                 alt="CLASSIC chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">CLASSIC</h3>
               <p class="list-text">Milk chocolate</p>
               <button type="button" class="price">45 UAH</button>
             </li>
             <li class="product-card">
               <img
-                src="./images/products/honey.png"
+                src="./images/products/honey-min.png"
+                srcset="
+                  ./images/products/honey-min.png    1x,
+                  ./images/products/honey_x2-min.png 2x
+                "
                 alt="HONEY chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">HONEY</h3>
               <p class="list-text">Milk chocolate</p>
               <button type="button" class="price">50 UAH</button>
             </li>
             <li class="product-card">
               <img
-                src="./images/products/roasted_fruits.png"
+                src="./images/products/roasted_fruits-min.png"
+                srcset="
+                  ./images/products/roasted_fruits-min.png    1x,
+                  ./images/products/roasted_fruits_x2-min.png 2x
+                "
                 alt="ROASTED FRUITS chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">ROASTED FRUITS</h3>
               <p class="list-text">Dark chocolate</p>
               <button type="button" class="price">66 UAH</button>
             </li>
             <li class="product-card">
               <img
-                src="./images/products/classis_white.png"
+                src="./images/products/classis_white-min.png"
+                srcset="
+                  ./images/products/classis_white-min.png    1x,
+                  ./images/products/classis_white_x2-min.png 2x
+                "
                 alt="CLASSIC chocolate img"
                 width="230"
                 height="201"
               />
+
               <h3 class="section-subtitle">CLASSIC</h3>
               <p class="list-text">White chocolate</p>
               <button type="button" class="price">54 UAH</button>
@@ -710,12 +1033,33 @@
             <li class="sellers-item">
               <div class="sellers-item-box">
                 <div class="sellers-card">
-                  <img
-                    src="./images/top-sellers/chocolat-with-nuts.jpg"
-                    alt="CHOCOLATE WITH NUTS img"
-                    width="368"
-                    height="464"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/top-sellers/desk_chocolat-with-nuts.jpg    1x,
+                        ./images/top-sellers/desk_chocolat-with-nuts_x2.jpg
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/top-sellers/tab_chocolat-with-nuts.jpg    1x,
+                        ./images/top-sellers/tab_chocolat-with-nuts_x2.jpg
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/top-sellers/mob_chocolat-with-nuts.jpg    1x,
+                        ./images/top-sellers/mob_chocolat-with-nuts_x2.jpg
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/top-sellers/desk_chocolat-with-nuts.jpg"
+                      alt="CHOCOLATE WITH NUTS img"
+                    />
+                  </picture>
                 </div>
                 <div class="sellers-text">
                   <ul class="seller-list">
@@ -750,12 +1094,33 @@
             <li class="sellers-item">
               <div class="sellers-item-box">
                 <div class="sellers-card">
-                  <img
-                    src="./images/top-sellers/chocolat-with-fruits.jpg"
-                    alt="CHOCOLATE WITH FRUITS img"
-                    width="368"
-                    height="464"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/top-sellers/desk_chocolat-with-fruits.jpg    1x,
+                        ./images/top-sellers/desk_chocolat-with-fruits_x2.jpg
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/top-sellers/tab_chocolat-with-fruits.jpg        1x,
+                        ./images/top-sellers/tab_chocolat-with-fruits_x2-min.jpg
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/top-sellers/mob_chocolat-with-fruits.jpg        1x,
+                        ./images/top-sellers/mob_chocolat-with-fruits_x2-min.jpg
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/top-sellers/desk_chocolat-with-fruits.jpg"
+                      alt="CHOCOLATE WITH FRUITS img"
+                    />
+                  </picture>
                 </div>
                 <div class="sellers-text">
                   <ul class="seller-list">
@@ -797,12 +1162,33 @@
             <li class="sellers-item">
               <div class="sellers-item-box">
                 <div class="sellers-card">
-                  <img
-                    src="./images/top-sellers/dark-chocolate.jpg"
-                    alt="DARK CHOCOLATE img"
-                    width="368"
-                    height="464"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/top-sellers/desk_dark-chocolate.jpg        1x,
+                        ./images/top-sellers/desc_dark-chocolate_x2-min.jpg
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/top-sellers/tab_dark-chocolate.jpg        1x,
+                        ./images/top-sellers/tab_dark-chocolate_x2-min.jpg
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/top-sellers/mob_dark-chocolate.jpg        1x,
+                        ./images/top-sellers/mob_dark-chocolate_x2-min.jpg
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/top-sellers/desk_dark-chocolate.jpg"
+                      alt="DARK CHOCOLATE img"
+                    />
+                  </picture>
                 </div>
                 <div class="sellers-text">
                   <ul class="seller-list">
@@ -846,11 +1232,16 @@
             <li class="review-item">
               <img
                 class="review-foto"
-                src="./images/chocolad-is-love/victoria_dobrzhanska.png"
+                src="./images/chocolad-is-love/victoria_dobrzhanska-min.png"
+                srcset="
+                  ./images/chocolad-is-love/victoria_dobrzhanska-min.png    1x,
+                  ./images/chocolad-is-love/victoria_dobrzhanska-x2-min.png
+                "
                 alt="Victoria Dobrzhanska"
                 width="80"
                 height="80"
               />
+
               <h3 class="section-subtitle">Victoria Dobrzhanska</h3>
               <p class="list-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -860,11 +1251,16 @@
             <li class="review-item">
               <img
                 class="review-foto"
-                src="./images/chocolad-is-love/nazar_babenko.png"
+                src="./images/chocolad-is-love/nazar_babenko-min.png"
+                srcset="
+                  ./images/chocolad-is-love/nazar_babenko-min.png    1x,
+                  ./images/chocolad-is-love/nazar_babenko-x2-min.png
+                "
                 alt="Nazar Babenko"
                 width="80"
                 height="80"
               />
+
               <h3 class="section-subtitle">Nazar Babenko</h3>
               <p class="list-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -875,11 +1271,16 @@
             <li class="review-item">
               <img
                 class="review-foto"
-                src="./images/chocolad-is-love/olena_kampusch.png"
+                src="./images/chocolad-is-love/olena_kampusch-min.png"
+                srcset="
+                  ./images/chocolad-is-love/olena_kampusch-min.png    1x,
+                  ./images/chocolad-is-love/olena_kampusch-x2-min.png
+                "
                 alt="Olena Kampusch"
                 width="80"
                 height="80"
               />
+
               <h3 class="section-subtitle">Olena Kampusch</h3>
               <p class="list-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -1027,5 +1428,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="/js/burger.js" type="module"></script>
+    <script src="/js/modal.js" type="module"></script>
   </body>
 </html>
