@@ -457,7 +457,7 @@ body {
 /* ======= Hero tab ====== */
 @media (min-width: 768px) {
   .hero-section {
-    max-width: 704px;
+    max-width: 768px;
     height: 890px;
     background: linear-gradient(
         180deg,
@@ -519,7 +519,7 @@ body {
 /* =======Hero desk ======*/
 @media (min-width: 1200px) {
   .hero-section {
-    max-width: 1136px;
+    max-width: 1200px;
     height: 600px;
     background: linear-gradient(
         180deg,
@@ -531,7 +531,7 @@ body {
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
     .hero-section {
-      background-image: url(/images/hero/desk_chocolate_hero_x2.jpg);
+      background-image: url(/images/hero/mob_chocolate_hero_x2.jpg);
     }
   }
 
@@ -990,7 +990,7 @@ body {
 }
 
  
-/* @media (min-width: 768px) {
+ @media (min-width: 768px) {
   .how-its-made-section .container {
     min-width: 614px;
      }
@@ -1015,7 +1015,7 @@ body {
   .text-made {
     max-width: 550px;
   }
- }  */
+ }  
 
 
  @media screen and (min-width: 1200px) {
