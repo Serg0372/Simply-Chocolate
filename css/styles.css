@@ -920,15 +920,16 @@ body {
 
 /* --======HOW IT’S made?=======- */
 
-.how-its-made-section .container {
+ .how-its-made-section .container {
   min-width: 320px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .made-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+ }
 
 .fotos {
   overflow: hidden;
@@ -981,19 +982,18 @@ body {
   content: "";
   width: 8px;
   height: 8px;
-  background-image: url(./images/icon/Ellipse.svg);
+  background-image: url(/images/icon/Ellipse.svg);
 }
 
 .text-made {
   max-width: 290px;
 }
 
-/* --======  HOW IT’S made? tab  =======- */
-@media (min-width: 768px) {
+ 
+/* @media (min-width: 768px) {
   .how-its-made-section .container {
     min-width: 614px;
-    margin: 0 auto;
-  }
+     }
   .fotos {
     margin: 0 47px;
   }
@@ -1015,34 +1015,38 @@ body {
   .text-made {
     max-width: 550px;
   }
-}
+ }  */
 
-/* --======  HOW IT’S made? desc  =======- */
-@media (min-width: 1200px) {
+
+ @media screen and (min-width: 1200px) {
   .how-its-made-section .container {
-    min-width: 600px;
-    margin: 0 auto;
-  }
+    min-width: 1200px;
+    margin-right: auto;
+      margin-left: auto;
+     }
 
-  .fotos {
-    margin: 0;
-  }
   .made-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+
+   .fotos {
+    margin: 0;
   }
 
   .recipу-container {
     width: 516px;
-    margin: 0 auto;
-    padding: 32px 32px 32px 52px;
+    margin: 0;
+    padding: 32px 0px 32px 52px;
   }
 
   .text-made {
     max-width: 410px;
   }
-}
+} 
+
+
 
 /* ================ OUR PRODUCTS =============== */
 /* ======== OUR PRODUCTS mob ======== */
