@@ -341,13 +341,13 @@ body {
       rgba(17, 17, 17, 0.4) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(/images/hero/mob_chocolate_hero.jpg);
+    url(images/hero/mob_chocolate_hero.jpg);
   background-size: cover;
   color: #ffffff;
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
   .hero-section {
-    background-image: url(/images/hero/mob_chocolate_hero_x2.jpg);
+    background-image: url(images/hero/mob_chocolate_hero_x2.jpg);
   }
 }
 .hero-container {
@@ -464,12 +464,12 @@ body {
         rgba(17, 17, 17, 0.4) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(/images/hero/tab_chocolate_hero.jpg);
+      url(images/hero/tab_chocolate_hero.jpg);
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
     .hero-section {
-      background-image: url(/images/hero/tab_chocolate_hero_x2.jpg);
+      background-image: url(images/hero/tab_chocolate_hero_x2.jpg);
     }
   }
 
@@ -526,12 +526,12 @@ body {
         rgba(17, 17, 17, 0.4) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(/images/hero/desk_chocolate_hero.jpg);
+      url(images/hero/desk_chocolate_hero.jpg);
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
     .hero-section {
-      background-image: url(/images/hero/desk_chocolate_hero_x2.jpg);
+      background-image: url(images/hero/desk_chocolate_hero_x2.jpg);
     }
   }
 
@@ -981,7 +981,7 @@ body {
   content: "";
   width: 8px;
   height: 8px;
-  background-image: url(/images/icon/Ellipse.svg);
+  background-image: url(images/icon/Ellipse.svg);
 }
 
 .text-made {
