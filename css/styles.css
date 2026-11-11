@@ -59,7 +59,7 @@ body {
 .container {
   max-width: 375px;
   padding: 0 20px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .section {
@@ -73,9 +73,10 @@ body {
     padding: 0 32px;
     margin: 0 auto;
   }
-    .section {
-      padding: 50px 0;
-    }
+
+  .section {
+    padding: 50px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -84,9 +85,10 @@ body {
     padding: 0 32px;
     margin: 0 auto;
   }
-    .section {
-      padding: 60px 0;
-    }
+
+  .section {
+    padding: 60px 0;
+  }
 }
 
 .nav-link-name {
@@ -161,6 +163,8 @@ body {
   z-index: 1000;
   background-color: #fafafa;
   width: 100%;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* ===============  Header  =============== */
@@ -225,7 +229,8 @@ body {
 
 .burger-button:hover
 
-    /* .burger-button:focus */ {
+/* .burger-button:focus */
+  {
   stroke: #fd9222;
 }
 
@@ -371,22 +376,22 @@ body {
   max-width: 335px;
   margin: 0 auto;
   height: 620px;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(17, 17, 17, 0.4) 0%,
-      rgba(17, 17, 17, 0.4) 100%
-    ),
+      rgba(17, 17, 17, 0.4) 100%),
     url('../images/hero/mob_chocolate_hero.jpg');
   background-size: cover;
   color: #ffffff;
 }
+
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
   .hero-section {
     background-image: url('../images/hero/mob_chocolate_hero_x2.jpg');
   }
 }
+
 .hero-container {
-   padding:395px 20px 20px 20px;
+  padding: 395px 20px 20px 20px;
 }
 
 .hero-title {
@@ -408,6 +413,7 @@ body {
   flex-direction: column;
   /* align-items: center; */
 }
+
 .buttons-hero-box {
   display: flex;
   text-align: center;
@@ -426,7 +432,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   background-color: #fd9222;
-  
+
   color: currentColor;
   margin-right: 12px;
   transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -500,13 +506,11 @@ body {
   .hero-section {
     min-width: 704px;
     height: 890px;
-    background: linear-gradient(
-        180deg,
+    background: linear-gradient(180deg,
         rgba(17, 17, 17, 0.4) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
+        rgba(17, 17, 17, 0.4) 100%),
       url('../images/hero/tab_chocolate_hero.jpg');
-     
+
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
@@ -562,13 +566,11 @@ body {
 @media screen and (min-width: 1200px) {
   .hero-section {
     min-width: 1136px;
-    
+
     height: 600px;
-    background: linear-gradient(
-        180deg,
+    background: linear-gradient(180deg,
         rgba(17, 17, 17, 0.4) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
+        rgba(17, 17, 17, 0.4) 100%),
       url('../images/hero/desk_chocolate_hero.jpg');
   }
 
@@ -606,6 +608,7 @@ body {
   width: 62px;
   height: 62px;
   border-radius: 50%;
+  transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subtitle-benefits {
@@ -626,9 +629,13 @@ body {
   transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subtitle-benefits:hover,
-.text-benefits:hover {
-  color: rgba(255, 255, 255, 1);
+.benefits-list-column:hover .subtitle-benefits,
+.benefits-list-column:hover .text-benefits {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.benefits-list-column:hover .benefits-list-icon {
+  border-color: rgba(255, 255, 255, 0.75)
 }
 
 /* ======= Our Benefits tab =========== */
@@ -651,6 +658,7 @@ body {
   .benefits-list-column {
     width: calc((100% - 88px) / 2);
   }
+
   .benefits-list-icon {
     display: flex;
     align-items: center;
@@ -721,11 +729,13 @@ body {
 .text-ingridients:hover {
   color: rgba(0, 0, 0, 1);
 }
+
 .ingredients-list {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
+
 .ingredients-title:hover .chocolate-text {
   top: 0;
   transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -744,6 +754,7 @@ body {
   right: 14px;
   top: 14px;
 }
+
 .section-subtitle {
   font-weight: 600;
   font-size: 14px;
@@ -937,6 +948,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
 .made-box {
   display: flex;
   flex-direction: column;
@@ -1005,6 +1017,7 @@ body {
   .how-its-made-section .container {
     min-width: 768px;
   }
+
   .fotos {
     margin: 0 47px;
   }
@@ -1031,7 +1044,7 @@ body {
 @media screen and (min-width: 1200px) {
   .how-its-made-section .container {
     min-width: 1200px;
-      }
+  }
 
   .made-box {
     display: flex;
@@ -1120,9 +1133,9 @@ body {
 
 /* ======== OUR PRODUCTS tab ======== */
 @media screen and (min-width: 768px) {
-  
 
- 
+
+
 
   .products-list {
     display: flex;
@@ -1136,6 +1149,7 @@ body {
     width: calc((100% - 32px) / 2);
   }
 }
+
 /* ======== OUR PRODUCTS desk ======== */
 @media screen and (min-width: 1200px) {
 
@@ -1207,10 +1221,11 @@ body {
   border-left: 1px solid #fd9222;
   border-right: 1px solid #fd9222;
 }
+
 /*  ======   TOp Sellers tab ===== */
 
 @media screen and (min-width: 768px) {
-  
+
   .sellers-list {
     display: flex;
     flex-direction: row;
@@ -1218,9 +1233,11 @@ body {
     gap: 16px;
     column-gap: 16px;
   }
+
   .sellers-item {
     width: calc((100 - 16px) / 2);
   }
+
   .sellers-item .section-subtitle {
     padding: 28px 0;
   }
@@ -1233,7 +1250,7 @@ body {
 /*  ======   TOp Sellers desk ===== */
 
 @media screen and (min-width: 1200px) {
-  
+
 
   .sellers-item {
     width: calc((100 - 2 * 16px) / 3);
@@ -1335,7 +1352,7 @@ body {
 /*  ======   CHOCOLATE IS LOVED tab ===== */
 
 @media screen and (min-width: 768px) {
-  
+
 
   .review-list {
     display: flex;
@@ -1348,6 +1365,7 @@ body {
   .review-item {
     width: calc((100% - 28px) / 2);
   }
+
   .button-review {
     padding: 14px 40px;
   }
@@ -1356,7 +1374,7 @@ body {
 /*  ======  CHOCOLATE IS LOVED desk ===== */
 
 @media screen and (min-width: 1200px) {
-  
+
 
   .review-list {
     display: flex;
@@ -1373,7 +1391,7 @@ body {
 /* ====================  Footer   ==================== */
 
 .footer-section .container {
-   margin: 40px auto 0;
+  margin: 40px auto 0;
 }
 
 .footer-section {
@@ -1507,20 +1525,24 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 319px) {.footer-bottoms {
+@media screen and (max-width: 319px) {
+  .footer-bottoms {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin: 32px auto 0;
-  }}
+  }
+}
 
 .footer-bottoms {
+  position: relative;
   display: flex;
   gap: 8px;
   margin: 32px auto 0;
 }
 
-.button-your-email {
+.footer-input {
+
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
   padding: 14px 18px;
@@ -1528,6 +1550,17 @@ body {
   color: #ffffff;
   font-size: 14px;
   background: #1e1823;
+}
+
+.footer-label {
+  /* font-size: 12px; */
+  position: absolute;
+  z-index: 5;
+  top: -6px;
+  left: 12px;
+  /* padding: 0 6px;
+  color: rgba(255, 255, 255, 0.25);
+  background-color: #1e1823; */
 }
 
 .button-subscribe {
@@ -1554,11 +1587,11 @@ body {
     margin-top: 50px;
   }
 
- 
 
-  .footer-container {
+
+  /* .footer-container {
     padding: 0;
-  }
+  } */
 
   .footer-box-contact {
     display: flex;
@@ -1603,6 +1636,7 @@ body {
   .nav-list:nth-child(even) {
     display: block;
   }
+
   .nav-list:nth-child(3n + 2),
   .nav-list:nth-child(3n + 4) {
     display: none;
@@ -1632,7 +1666,7 @@ body {
     margin: 0 0 0 auto;
   }
 
-  .button-your-email {
+  .footer-input {
     padding: 14px 24px;
     height: 45px;
   }
@@ -1650,7 +1684,8 @@ body {
     margin-top: 60px;
     font-size: 16px
   }
-  .footer-container{
+
+  .footer-container {
     padding: 50px 32px;
   }
 
@@ -1692,7 +1727,7 @@ body {
     margin: 0 0 0 auto;
   }
 
-  .button-your-email {
+  .footer-input {
     padding: 14px 24px;
     height: 45px;
   }
@@ -1886,7 +1921,7 @@ body {
   border: 1.5px solid #fd9222;
 }
 
-.backdrop-form-input:focus + .icons-form {
+.backdrop-form-input:focus+.icons-form {
   stroke: #fd9222;
 }
 
@@ -1927,7 +1962,7 @@ body {
   fill: #ffffff;
 }
 
-.visually-hidden:checked + .backdrop-form-privacy-policy .checkbox-kastoms {
+.visually-hidden:checked+.backdrop-form-privacy-policy .checkbox-kastoms {
   background-color: #fd9222;
 }
 
